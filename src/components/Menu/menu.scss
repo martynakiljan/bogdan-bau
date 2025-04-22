@@ -1,0 +1,42 @@
+.menu {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 20px;
+	color: var(--white-color);
+}
+
+.menu__inner {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.menu__col-right {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.menu__list {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu__li {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-between;
+
+	span {
+		display: flex;
+		font-size: 20px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	svg {
+		font-size: 20px;
+	}
+}

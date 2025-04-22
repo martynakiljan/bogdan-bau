@@ -1,0 +1,29 @@
+.services {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.services__inner {
+	width: 800px;
+}
+
+.services__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.services__li {
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+}
+
+.services__title {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
