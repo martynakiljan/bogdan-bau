@@ -1,0 +1,36 @@
+.highlights__inner {
+	max-width: var(--max-width);
+	color: var(--white-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+
+	@include md-min {
+		flex-direction: row;
+		padding: 50px 0;
+	}
+}
+
+.highlights__item {
+	width: 33%;
+	background-color: var(--main-color);
+	padding: 20px;
+	min-height: 350px;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: -2px;
+		right: 0;
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 30px solid var(--white-color);
+		border-left: 30px solid transparent;
+	}
+
+	svg {
+		font-size: 25px;
+	}
+}

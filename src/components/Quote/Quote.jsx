@@ -1,4 +1,4 @@
-import './quote.scss'
+
 const Quote = () => {
 	return (
 		<div className='quote__bg section-fullwidth'>

@@ -1,0 +1,80 @@
+.header__img {
+	background-image: url('../../assets/images/header.jpg');
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	margin-bottom: 100px;
+
+	&:after {
+		position: absolute;
+		content: '';
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.header__quote {
+	color: var(--white-color);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.header__text {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.header__scroll {
+	margin: 20px 0;
+}
+.header__scroll-line {
+	height: 40px;
+	width: 1px;
+	display: block;
+	background-color: var(--white-color);
+	margin: 0 auto;
+}
+
+.header__scroll-text {
+	display: block;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.header__scroll-line {
+	height: 60px;
+	width: 1px;
+	display: block;
+	background-color: var(--white-color);
+	margin: 0 auto;
+	transform-origin: top center;
+	animation: waveLine 3s infinite ease-in-out;
+}
+
+@keyframes waveLine {
+	0%,
+	100% {
+		transform: scaleY(0.66);
+	}
+	50% {
+		transform: scaleY(1);
+	}
+}
+
+.header__quote {
+	color: var(--white-color);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}

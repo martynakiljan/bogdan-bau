@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700;800&family=Raleway:wght@100&display=swap');
-@import '../../assets/styles/media-queries.scss';
-@import '../../assets/styles/helper-mixin.scss';
+@import './helper-mixin.scss';
+@import './media-queries.scss';
 
 :root {
-	--main-color: #4d4b4a;
-	--second-color: #f6ce4a;
-	--white-color: #fff;
+	--main-color: #212121;
+	--second-color: #754d23;
+	--white-color: #fcfcfc;
 	--black-color: #000000;
-	--gray-light-color: #b8b8b8;
-	--white-smoke-color: #e8e8e8;
 	--max-width: 1200px;
 }
 
@@ -16,6 +14,10 @@ html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scroll-padding-top: 100px;
+}
+
+body {
+	background-color: var(--white-color);
 }
 
 * {
@@ -31,16 +33,20 @@ html {
 	box-sizing: border-box;
 }
 
+a {
+	color: var(--black-color);
+
+	&:hover {
+		color: var(--second-color);
+	}
+}
+
 .section {
 	@include content-width;
 	margin-bottom: 100px;
 
 	&.contact {
-		margin-bottom: 200px;
-
-		.title {
-			margin-bottom: 200px;
-		}
+		margin-top: 100px;
 	}
 }
 .section-2cols {
@@ -52,6 +58,10 @@ html {
 
 .section-fullwidth {
 	margin-bottom: 100px;
+
+	&.contact {
+		margin-bottom: 0;
+	}
 }
 
 .section-text {
@@ -62,10 +72,6 @@ html {
 	@include md-min {
 		font-size: 30px;
 		margin-bottom: 30px;
-	}
-
-	&.special {
-		margin-top: -100px;
 	}
 }
 
@@ -84,6 +90,11 @@ html {
 	align-items: center;
 	margin-top: 20px;
 	color: var(--main-color);
+	cursor: pointer;
+
+	&:hover {
+		color: var(--second-color);
+	}
 }
 
 .button_icon {

@@ -1,4 +1,4 @@
-import './services.scss'
+
 
 const Services = () => {
 	return (
@@ -7,6 +7,13 @@ const Services = () => {
 
 			<div className='services__inner'>
 				<ul className='services__list'>
+			
+					<li className='services__li'>
+						<h3 className='services__title'>Nassgips</h3>
+						<span>Spachteln Q1–Q4</span>
+						<span>Abrieb</span>
+						<span>Weissputz</span>
+					</li>
 					<li className='services__li'>
 						<h3 className='services__title'>Trockenbau</h3>
 						<span>Trockenbau Wände</span>
@@ -15,12 +22,6 @@ const Services = () => {
 						<span>Albaplatten</span>
 						<span>Abgehängte Decken</span>
 						<span>Heraklithplatten</span>
-					</li>
-					<li className='services__li'>
-						<h3 className='services__title'>Nassgips</h3>
-						<span>Spachteln Q1–Q4</span>
-						<span>Abrieb</span>
-						<span>Weissputz</span>
 					</li>
 					<li className='services__li'>
 						<h3 className='services__title'>Malerarbeiten</h3>

@@ -1,4 +1,4 @@
-import './fullimg.scss'
+
 const Fullimg = () => {
 	return (
 		<div className='fullimg section'>

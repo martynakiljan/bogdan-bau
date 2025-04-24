@@ -1,6 +1,3 @@
-@import '../../assets/styles/media-queries.scss';
-@import '../../assets/styles/helper-mixin.scss';
-
 .fullimg__img {
 	width: 33%;
 }
@@ -8,9 +5,14 @@
 .fullimg {
 	@include content-width;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	gap: 20px;
 	margin-bottom: 100px;
+
+	@include md-min {
+		flex-direction: row;
+	}
 }
 
 .fullimg__img {
