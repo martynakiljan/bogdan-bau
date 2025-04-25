@@ -14,7 +14,7 @@
 
 	&.menu-scrolled {
 		width: 100%;
-		background-color: rgba(255, 255, 255);
+		background-color: #ebe9e9;
 		color: #000;
 	}
 }
@@ -24,6 +24,7 @@
 	justify-content: space-between;
 	align-items: center;
 	font-size: 20px;
+	color: var(--white-color);
 
 	@include md-min {
 		margin: 0 20px;
@@ -33,9 +34,15 @@
 .menu__col-right {
 	font-weight: 400;
 	font-size: 14px;
+	color: var(--white-color);
 
 	@include md-min {
 		font-size: 30px;
+	}
+
+	.menu-scrolled &,
+	.menu-open & {
+		color: var(--black-color);
 	}
 }
 
@@ -51,8 +58,9 @@
 	gap: 10px;
 	align-items: center;
 	cursor: pointer;
+	color: var(--white-color);
 
-	a {
+	* {
 		color: var(--white-color);
 
 		.menu-scrolled &,
@@ -65,9 +73,11 @@
 		display: flex;
 		font-size: 16px;
 		align-items: center;
+		color: var(--white-color);
 	}
 	svg {
 		font-size: 16px;
+		color: var(--white-color);
 	}
 }
 

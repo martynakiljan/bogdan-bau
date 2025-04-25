@@ -5,8 +5,8 @@
 :root {
 	--main-color: #212121;
 	--second-color: #754d23;
-	--white-color: #fcfcfc;
-	--black-color: #000000;
+	--white-color: #e7dfdf;
+	--black-color: #403e3e;
 	--max-width: 1200px;
 }
 
@@ -17,7 +17,7 @@ html {
 }
 
 body {
-	background-color: var(--white-color);
+	background-color: #ebe9e9;
 	height: 100%;
 }
 
@@ -32,6 +32,7 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	box-sizing: border-box;
+	color: var(--black-color);
 
 	@include md-max {
 		font-size: 14px;

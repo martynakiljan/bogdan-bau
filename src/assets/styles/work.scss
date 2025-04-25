@@ -96,7 +96,7 @@
 	top: 50%;
 	transform: translateY(-50%);
 	font-size: 2.5rem;
-	color: white;
+	color: var(--white-color);
 	cursor: pointer;
 	user-select: none;
 }
@@ -114,7 +114,7 @@
 	top: -40px;
 	right: 0;
 	font-size: 2rem;
-	color: white;
+	color: var(--white-color);
 	cursor: pointer;
 
 	@include md-min {
