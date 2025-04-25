@@ -1,9 +1,20 @@
-
 .services {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: flex-start;
+
+	@include md-min {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.title {
+		@include md-max {
+			margin-bottom: 30px;
+		}
+	}
 }
 
 .services__inner {
@@ -12,19 +23,35 @@
 
 .services__list {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: flex-start;
+
+	@include md-min {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
 }
 
 .services__li {
 	width: 33%;
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 20px;
+	gap: 7px;
+
+	@include md-min {
+		padding-bottom: 0;
+	}
 }
 
 .services__title {
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 10px;
+
+	@include md-min {
+		font-size: 20px;
+	}
 }

@@ -1,6 +1,5 @@
-
-import { CiMenuBurger } from "react-icons/ci";
-import { CiPhone } from "react-icons/ci";
+import { CiMenuBurger } from 'react-icons/ci'
+import { CiPhone } from 'react-icons/ci'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState, useEffect, useRef } from 'react'
 
@@ -8,6 +7,7 @@ const Menu = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const [isScrolled, setIsScrolled] = useState(false)
 	const menuRef = useRef(null)
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
 	// Toggle class on body
 	useEffect(() => {
@@ -59,15 +59,15 @@ const Menu = () => {
 					<ul className='menu__list'>
 						<li className='menu__li' onClick={() => setIsMenuOpen(!isMenuOpen)}>
 							<span>{isMenuOpen ? <AiOutlineClose /> : <CiMenuBurger />}</span>
-							<span>Menu</span>
+							{windowWidth > 500 && <span>Menu</span>}
 						</li>
 						<li className='menu__li'>
 							<span>
-							<CiPhone />
+								<CiPhone />
 							</span>
 							<a href='tel:+41779475177'>
-          <p>+41 77 947 51 77</p>
-        </a>
+								<p>+41 77 947 51 77</p>
+							</a>
 						</li>
 					</ul>
 				</div>

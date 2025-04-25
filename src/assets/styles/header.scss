@@ -6,7 +6,7 @@
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 
 	&:after {
 		position: absolute;
@@ -16,6 +16,10 @@
 		left: 0;
 		right: 0;
 		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	@include md-min {
+		margin-bottom: 100px;
 	}
 }
 
@@ -29,7 +33,13 @@
 
 .header__text {
 	font-weight: 400;
+	font-size: 30px;
+	padding: 0 20px;
 	text-transform: uppercase;
+
+	@include md-min {
+		font-size: 40px;
+	}
 }
 
 .header__scroll {

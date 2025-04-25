@@ -13,7 +13,7 @@ const Highlights = () => {
 						<h3>
 							<FaHammer />
 						</h3>
-						<h2 className='highlights__title title'>
+						<h2 className='highlights__title title title-small'>
 							Aufmerksamkeit <br></br>fürs Detail
 						</h2>
 						<p className='highlights__text'>
@@ -25,7 +25,7 @@ const Highlights = () => {
 						<h2>
 							<TbGrillSpatula />
 						</h2>
-						<h2 className='highlights__title title'>
+						<h2 className='highlights__title title  title-small'>
 							Zuverlässigkeit<br></br> und Qualität
 						</h2>
 						<p className='highlights__text'>
@@ -37,7 +37,7 @@ const Highlights = () => {
 						<h2>
 							<FaPaintRoller />
 						</h2>
-						<h2 className='highlights__title title'>
+						<h2 className='highlights__title title  title-small'>
 							Fleiss <br></br>und Präzision
 						</h2>
 						<p className='highlights__text'>

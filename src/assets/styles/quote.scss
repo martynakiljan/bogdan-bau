@@ -1,6 +1,9 @@
-
 .quote__text {
 	color: var(--white-color);
-	font-size: 50px;
-    
+	font-size: 30px;
+	text-align: center;
+
+	@include md-min {
+		font-size: 50px;
+	}
 }

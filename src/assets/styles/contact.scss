@@ -1,9 +1,8 @@
-
 .contact__inner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .contact__col {
@@ -24,7 +23,19 @@
 	align-items: flex-start;
 	flex-direction: column;
 
+	p {
+		font-size: 12px;
+	}
+
 	svg {
-		font-size: 50px;
+		font-size: 30px;
+
+		@include md-min {
+			font-size: 50px;
+		}
+	}
+
+	@include md-min {
+		font-size: 16px;
 	}
 }

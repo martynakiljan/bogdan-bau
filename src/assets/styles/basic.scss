@@ -11,13 +11,14 @@
 }
 
 html {
-	overflow-y: scroll;
 	overflow-x: hidden;
 	scroll-padding-top: 100px;
+	height: 100%;
 }
 
 body {
 	background-color: var(--white-color);
+	height: 100%;
 }
 
 * {
@@ -31,6 +32,10 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	box-sizing: border-box;
+
+	@include md-max {
+		font-size: 14px;
+	}
 }
 
 a {
@@ -41,47 +46,87 @@ a {
 	}
 }
 
+#root {
+	overflow-x: hidden;
+}
+
 .section {
 	@include content-width;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 
 	&.contact {
-		margin-top: 100px;
+		margin-top: 30px;
+		@include md-min {
+			margin-top: 100px;
+		}
+	}
+
+	@include md-min {
+		margin-bottom: 100px;
 	}
 }
+
 .section-2cols {
 	display: flex;
+	flex-direction: column;
 	width: 100vw;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: flex-start;
+	gap: 20px;
+
+	@include md-min {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
 }
 
 .section-fullwidth {
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 
 	&.contact {
 		margin-bottom: 0;
 	}
+
+	@include md-min {
+		margin-bottom: 100px;
+	}
 }
 
 .section-text {
-	width: 800px;
+	@include md-min {
+		width: 800px;
+	}
 }
 
 .title {
+	font-size: 20px;
+
 	@include md-min {
 		font-size: 30px;
 		margin-bottom: 30px;
 	}
 }
 
+.title-small {
+	font-size: 18px;
+
+	@include md-min {
+		font-size: 25px;
+	}
+}
+
 .quote__bg {
-	height: 30vh;
+	height: 25vh;
 	background-color: var(--main-color);
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@include md-min {
+		height: 30vh;
+	}
 }
 
 .button {
