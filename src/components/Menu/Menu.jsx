@@ -44,16 +44,23 @@ const Menu = () => {
 	const handleLinkClick = (e, section) => {
 		e.preventDefault()
 		setIsMenuOpen(false)
+
 		const target = document.getElementById(section)
 		if (target) {
-			target.scrollIntoView({ behavior: 'smooth' })
+			const menuHeight = document.querySelector('.menu')?.offsetHeight || 0 
+			window.scrollTo({
+				top: target.offsetTop - menuHeight, 
+				behavior: 'smooth',
+			})
 		}
 	}
 
 	return (
 		<div className={`menu ${isScrolled ? 'menu-scrolled' : ''}`} ref={menuRef}>
 			<div className='menu__inner'>
-				<div className='menu__col menu__col-right'>Bogdan Bau GmbH</div>
+				<div className='menu__col menu__col-right' onClick={e => handleLinkClick(e, 'home')}>
+					Bogdan Bau GmbH
+				</div>
 
 				<div className='menu__col menu__col-left'>
 					<ul className='menu__list'>

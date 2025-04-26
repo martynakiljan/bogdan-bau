@@ -1,7 +1,7 @@
 import { IoIosArrowRoundForward } from 'react-icons/io'
 const Story = () => {
 	return (
-		<div className='section-2cols  section about'>
+		<div className='section-2cols  section about' id='story'>
 			<h1 className='title'>Philosophie</h1>
 
 			<p className='section-text'>
@@ -11,13 +11,12 @@ const Story = () => {
 				Wirklichkeit werden zu lassen. Vertrauen Sie auf unser Know-how und lassen Sie uns gemeinsam Ihre Vision
 				verwirklichen.
 				<a className='button'>
-				<span>Schreiben Sie uns</span>
-				<span className='button_icon'>
-					<IoIosArrowRoundForward />
-				</span>
-			</a>
+					<span>Schreiben Sie uns</span>
+					<span className='button_icon'>
+						<IoIosArrowRoundForward />
+					</span>
+				</a>
 			</p>
-
 		</div>
 	)
 }

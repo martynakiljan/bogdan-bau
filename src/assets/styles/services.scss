@@ -27,7 +27,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 
-	@include md-min {
+	@include sm-min {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;

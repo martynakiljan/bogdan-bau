@@ -56,32 +56,20 @@ const Work = () => {
 	}, [isOpen])
 
 	return (
-		<div className='work section-fullwidth'>
-			<h1 className='title section'>Werfen Sie einen Blick auf unsere Arbeiten</h1>
+		<div className='work section' id="projects">
+			<h1 className='title section-fullwidth' >Werfen Sie einen Blick auf unsere Arbeiten</h1>
 			<div className='work__images'>
 				{imageList.map((_, index) => (
-					<div
-						key={index}
-						className={`image-grid image-grid-${index + 1}`}
-						onClick={() => openSlider(index)}
-					></div>
+					<div key={index} className={`image-grid image-grid-${index + 1}`} onClick={() => openSlider(index)}></div>
 				))}
 			</div>
 
 			{isOpen && (
-				<div
-					className='slider-overlay'
-					ref={overlayRef}
-					onClick={handleOverlayClick}
-				>
+				<div className='slider-overlay' ref={overlayRef} onClick={handleOverlayClick}>
 					<div className='slider-content'>
 						<FiX className='slider-close' onClick={closeSlider} />
 						<FiChevronLeft className='slider-arrow left' onClick={prevSlide} />
-						<img
-							src={imageList[currentIndex]}
-							alt='Preview'
-							className='slider-image'
-						/>
+						<img src={imageList[currentIndex]} alt='Preview' className='slider-image' />
 						<FiChevronRight className='slider-arrow right' onClick={nextSlide} />
 					</div>
 				</div>

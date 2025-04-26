@@ -1,9 +1,8 @@
-
 @mixin content-width {
 	max-width: var(--max-width);
 	margin: 0 auto;
 
-	@include md-max {
+	@include xl-max {
 		padding: 0 20px;
 	}
 }

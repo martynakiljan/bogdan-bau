@@ -1,10 +1,9 @@
-
 import { IoIosPhonePortrait } from 'react-icons/io'
 import { AiOutlineMail } from 'react-icons/ai'
 import { MdWhereToVote } from 'react-icons/md'
 const Contact = () => {
 	return (
-		<div className='contact section-fullwidth'>
+		<div className='contact section-fullwidth' id='contact'>
 			<h1 className='title section'>Sollen wir reden?</h1>
 
 			<div className='contact section'>

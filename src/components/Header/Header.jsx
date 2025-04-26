@@ -22,7 +22,7 @@ const Header = () => {
 	}
 
 	return (
-		<div className='header'>
+		<div className='header'  id="home">
 			<div className='header__img'></div>
 			<Menu />
 			<div className='header__quote' style={quoteStyle}>
