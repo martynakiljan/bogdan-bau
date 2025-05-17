@@ -90,3 +90,12 @@
 	text-align: center;
 	transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
+
+.header__scroll-text {
+	cursor: pointer;
+
+	&:hover {
+		color: #909090;
+	}
+}
+

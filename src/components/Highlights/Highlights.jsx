@@ -1,4 +1,3 @@
-
 import { FaHammer } from 'react-icons/fa6'
 import { TbGrillSpatula } from 'react-icons/tb'
 import { FaPaintRoller } from 'react-icons/fa6'
@@ -10,15 +9,15 @@ const Highlights = () => {
 			<div className='highlights section-full-width'>
 				<div className='highlights__inner section'>
 					<div className='highlights__item'>
-						<h3>
+						<h2>
 							<FaHammer />
-						</h3>
+						</h2>
 						<h2 className='highlights__title title title-small'>
-							Aufmerksamkeit <br></br>fürs Detail
+							Präzision & Qualität <br></br>
 						</h2>
 						<p className='highlights__text'>
-							ist für uns kein Luxus, sondern Standard Von der Planung bis zur letzten Schraube achten wir auf jedes
-							Detail, damit Sie ein Ergebnis erhalten, das überzeugt – optisch, funktional und qualitativ.
+							Wir legen grössten Wert auf sorgfältige Ausführung und hochwertige Materialien, um langlebige und perfekte
+							Ergebnisse zu gewährleisten.
 						</p>
 					</div>
 					<div className='highlights__item'>
@@ -26,23 +25,21 @@ const Highlights = () => {
 							<TbGrillSpatula />
 						</h2>
 						<h2 className='highlights__title title  title-small'>
-							Zuverlässigkeit<br></br> und Qualität
+							Flexibilität & Kundennähe<br></br>
 						</h2>
 						<p className='highlights__text'>
-							Ob Einfamilienhaus, Gewerbebau oder Sanierung – wir bringen das nötige Know-how mit, um Ihre Vision
-							Wirklichkeit werden zu lassen.
+							Jedes Projekt ist einzigartig. Wir passen unsere Lösungen individuell an Ihre Wünsche an und stehen Ihnen
+							jederzeit persönlich zur Seite.
 						</p>
 					</div>
 					<div className='highlights__item'>
 						<h2>
 							<FaPaintRoller />
 						</h2>
-						<h2 className='highlights__title title  title-small'>
-							Fleiss <br></br>und Präzision
-						</h2>
+						<h2 className='highlights__title title  title-small'>Zuverlässigkeit & Termintreue</h2>
 						<p className='highlights__text'>
-							das ist unser Fundament. Als erfahrenes Bauunternehmen setzen wir Ihre Projekte mit höchstem Engagement
-							um.
+							Pünktlichkeit und Verlässlichkeit sind für uns selbstverständlich. Wir garantieren eine termingerechte
+							Fertigstellung Ihres Bauvorhabens.
 						</p>
 					</div>
 				</div>

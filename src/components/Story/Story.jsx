@@ -5,12 +5,13 @@ const Story = () => {
 			<h1 className='title'>Philosophie</h1>
 
 			<p className='section-text'>
-				Wir sind ein engagiertes Bauunternehmen mit langjähriger Erfahrung in der Branche. Von kleinen
-				Renovierungsarbeiten bis hin zu großen Bauprojekten – wir stehen für Qualität, Zuverlässigkeit und Termintreue.
-				Unser Team aus qualifizierten Fachkräften arbeitet mit Leidenschaft und Präzision, um Ihre Bauwünsche
-				Wirklichkeit werden zu lassen. Vertrauen Sie auf unser Know-how und lassen Sie uns gemeinsam Ihre Vision
-				verwirklichen.
-				<a className='button'>
+				Im Mittelpunkt unserer Arbeit stehen Vertrauen, Qualität und Verantwortung. Wir glauben, dass sorgfältige
+				Ausführung, Liebe zum Detail und eine offene Kommunikation mit dem Kunden die Grundlage für eine erfolgreiche
+				Zusammenarbeit bilden. Jedes Projekt behandeln wir individuell – unabhängig von seiner Größe – und achten
+				darauf, dass es den Erwartungen entspricht und langfristig Bestand hat. Wir setzen auf moderne Lösungen,
+				bewährte Technologien und kontinuierliche Weiterentwicklung, um stets Dienstleistungen auf höchstem Niveau zu
+				bieten.
+				<a className='button button-section'>
 					<span>Schreiben Sie uns</span>
 					<span className='button_icon'>
 						<IoIosArrowRoundForward />

@@ -36,7 +36,8 @@ const Contact = () => {
 									href='https://www.google.com/maps/search/?api=1&query=Wydeweg+10+Bremgarten+5620'
 									target='_blank'
 									rel='noopener noreferrer'>
-									<p>Wydeweg 10 Bremgarten 5620</p>
+									<p>Tüfenbergstrasse 1</p>
+									<p> 9107 Urnäsch</p>
 								</a>
 							</div>
 						</div>

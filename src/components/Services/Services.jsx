@@ -1,5 +1,3 @@
-
-
 const Services = () => {
 	return (
 		<div className='services section'>
@@ -7,7 +5,6 @@ const Services = () => {
 
 			<div className='services__inner'>
 				<ul className='services__list'>
-			
 					<li className='services__li'>
 						<h3 className='services__title'>Nassgips</h3>
 						<span>Spachteln Q1–Q4</span>
@@ -21,7 +18,6 @@ const Services = () => {
 						<span>Vorsatzschalen</span>
 						<span>Albaplatten</span>
 						<span>Abgehängte Decken</span>
-						<span>Heraklithplatten</span>
 					</li>
 					<li className='services__li'>
 						<h3 className='services__title'>Malerarbeiten</h3>
