@@ -47,9 +47,9 @@ const Menu = () => {
 
 		const target = document.getElementById(section)
 		if (target) {
-			const menuHeight = document.querySelector('.menu')?.offsetHeight || 0 
+			const menuHeight = document.querySelector('.menu')?.offsetHeight || 0
 			window.scrollTo({
-				top: target.offsetTop - menuHeight, 
+				top: target.offsetTop - menuHeight,
 				behavior: 'smooth',
 			})
 		}
@@ -58,16 +58,12 @@ const Menu = () => {
 	return (
 		<div className={`menu ${isScrolled ? 'menu-scrolled' : ''}`} ref={menuRef}>
 			<div className='menu__inner'>
-				<div className='menu__col menu__col-right' onClick={e => handleLinkClick(e, 'home')}>
-					Bogdan Bau GmbH
+				<div className='menu__col menu__col-right ' onClick={e => handleLinkClick(e, 'home')}>
+					<a className='menu-logo'></a>
 				</div>
 
 				<div className='menu__col menu__col-left'>
 					<ul className='menu__list'>
-						<li className='menu__li' onClick={() => setIsMenuOpen(!isMenuOpen)}>
-							<span>{isMenuOpen ? <AiOutlineClose /> : <CiMenuBurger />}</span>
-							{windowWidth > 500 && <span>Menu</span>}
-						</li>
 						<li className='menu__li'>
 							<span>
 								<CiPhone />
@@ -75,6 +71,10 @@ const Menu = () => {
 							<a href='tel:+41779475177'>
 								<p>+41 77 947 51 77</p>
 							</a>
+						</li>
+						<li className='menu__li' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+							<span>{isMenuOpen ? <AiOutlineClose /> : <CiMenuBurger />}</span>
+							{windowWidth > 500 && <span>Menu</span>}
 						</li>
 					</ul>
 				</div>
