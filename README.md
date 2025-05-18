@@ -1,4 +1,12 @@
-Website in progress....
+
+<h2>Website for Bogdan Bau GmbH</h2>
+
+-------
+*website designed and programmed for a construction company. The goal was a minimalist and modern website.*
 
 
-<img width="1408" alt="Zrzut ekranu 2025-05-14 o 09 40 14" src="https://github.com/user-attachments/assets/afb6a9ba-872c-40f2-b00d-0c3cc6aead0a" />
+🔶 Technologies: REACT 
+<br>
+🔶 www.bogdan-bau.ch
+
+![Uploading Zrzut ekranu 2025-05-18 o 16.12.59.png…]()
