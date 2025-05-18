@@ -1,5 +1,13 @@
 import { IoIosArrowRoundForward } from 'react-icons/io'
+
 const Story = () => {
+	const handleScroll = () => {
+		const contactSection = document.getElementById('contact')
+		if (contactSection) {
+			contactSection.scrollIntoView({ behavior: 'smooth' })
+		}
+	}
+
 	return (
 		<div className='section-2cols  section about' id='story'>
 			<h1 className='title'>Philosophie</h1>
@@ -11,7 +19,7 @@ const Story = () => {
 				darauf, dass es den Erwartungen entspricht und langfristig Bestand hat. Wir setzen auf moderne Lösungen,
 				bewährte Technologien und kontinuierliche Weiterentwicklung, um stets Dienstleistungen auf höchstem Niveau zu
 				bieten.
-				<a className='button button-section'>
+				<a className='button button-section' onClick={handleScroll}>
 					<span>Schreiben Sie uns</span>
 					<span className='button_icon'>
 						<IoIosArrowRoundForward />

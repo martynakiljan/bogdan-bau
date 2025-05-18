@@ -4,7 +4,7 @@
 
 :root {
 	--main-color: #212121;
-	--second-color: #754d23;
+	--second-color: #000000;
 	--white-color: #e7dfdf;
 	--black-color: #403e3e;
 	--max-width: 1200px;
@@ -138,7 +138,7 @@ a {
 	cursor: pointer;
 
 	&:hover {
-		color: var(--second-color);
+		color: var(--white-color);
 	}
 }
 
@@ -151,11 +151,11 @@ a {
 .button-section {
 	background-color: var(--main-color);
 	color: var(--white-color);
-	padding: 18px 15px;
-	width: 200px;
+	padding: 15px 10px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
+	width: 180px;
 
 	svg {
 		font-size: 20px;

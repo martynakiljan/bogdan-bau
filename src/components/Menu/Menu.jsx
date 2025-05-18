@@ -86,7 +86,7 @@ const Menu = () => {
 						{[
 							{ id: 'home', label: 'Home' },
 							{ id: 'about', label: 'Über uns' },
-							{ id: 'story', label: 'Unsere Geschichte' },
+							{ id: 'story', label: 'Unsere Philosophie' },
 							{ id: 'projects', label: 'Unsere Projekte' },
 							{ id: 'contact', label: 'Kontakt' },
 						].map(({ id, label }) => (
