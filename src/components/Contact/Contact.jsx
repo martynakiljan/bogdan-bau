@@ -32,10 +32,7 @@ const Contact = () => {
 						<div className='contact__circle'>
 							<div className='contact__circle-text'>
 								<MdWhereToVote />
-								<a
-									href='https://www.google.com/maps/search/?api=1&query=Wydeweg+10+Bremgarten+5620'
-									target='_blank'
-									rel='noopener noreferrer'>
+								<a href='https://maps.app.goo.gl/Ya6TNRM9ERf3gY3a6' target='_blank' rel='noopener noreferrer'>
 									<p>Tüfenbergstrasse 1</p>
 									<p> 9107 Urnäsch</p>
 								</a>
