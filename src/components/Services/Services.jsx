@@ -20,8 +20,13 @@ const Services = () => {
 						<span>Abgehängte Decken</span>
 					</li>
 					<li className='services__li'>
-						<h3 className='services__title'>Malerarbeiten</h3>
+						<h3 className='services__title'>Wohnungsrenovierung</h3>
 						<span>Maler/Lackierer aller Art</span>
+						<span>Wände spachteln, ausbessern und glätten</span>
+						<span>Komplette Wohnungsauffrischungn</span>
+						<span>Badsanierung & Modernisierung</span>
+						<span>Fliesenarbeiten (Wand- und Bodenfliesen)</span>
+						<span>und vieles mehr</span>
 					</li>
 				</ul>
 			</div>

@@ -11,8 +11,13 @@ import img7 from '../../assets/images/slider-img-7.jpg'
 import img8 from '../../assets/images/slider-img-4.jpg'
 import img9 from '../../assets/images/slider-img-17.jpg'
 import img10 from '../../assets/images/slider-img-16.jpg'
+import img11 from '../../assets/images/slider-img-18.jpeg'
+import img12 from '../../assets/images/slider-img-19.jpeg'
+import img13 from '../../assets/images/slider-img-20.jpeg'
+import img14 from '../../assets/images/slider-img-21.jpeg'
+import img15 from '../../assets/images/slider-img-22.JPG'
 
-const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10]
+const imageList = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15]
 
 const Work = () => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -34,14 +39,12 @@ const Work = () => {
 		setCurrentIndex(prev => (prev - 1 + imageList.length) % imageList.length)
 	}
 
-	// Zamknięcie po kliknięciu w overlay (poza kontentem)
 	const handleOverlayClick = e => {
 		if (e.target === overlayRef.current) {
 			closeSlider()
 		}
 	}
 
-	// Zamknięcie przy scrollowaniu
 	useEffect(() => {
 		const handleScroll = () => {
 			if (isOpen) closeSlider()
@@ -57,21 +60,45 @@ const Work = () => {
 	}, [isOpen])
 
 	return (
-		<div className='work section' id='projects'>
+		<div
+			className='work section'
+			id='projects'
+		>
 			<h1 className='title section-fullwidth'>Werfen Sie einen Blick auf unsere Arbeiten</h1>
 			<div className='work__images'>
 				{imageList.map((_, index) => (
-					<div key={index} className={`image-grid image-grid-${index + 1}`} onClick={() => openSlider(index)}></div>
+					<div
+						key={index}
+						className={`image-grid image-grid-${index + 1}`}
+						onClick={() => openSlider(index)}
+					></div>
 				))}
 			</div>
 
 			{isOpen && (
-				<div className='slider-overlay' ref={overlayRef} onClick={handleOverlayClick}>
+				<div
+					className='slider-overlay'
+					ref={overlayRef}
+					onClick={handleOverlayClick}
+				>
 					<div className='slider-content'>
-						<FiX className='slider-close' onClick={closeSlider} />
-						<FiChevronLeft className='slider-arrow left' onClick={prevSlide} />
-						<img src={imageList[currentIndex]} alt='Preview' className='slider-image' />
-						<FiChevronRight className='slider-arrow right' onClick={nextSlide} />
+						<FiX
+							className='slider-close'
+							onClick={closeSlider}
+						/>
+						<FiChevronLeft
+							className='slider-arrow left'
+							onClick={prevSlide}
+						/>
+						<img
+							src={imageList[currentIndex]}
+							alt='Preview'
+							className='slider-image'
+						/>
+						<FiChevronRight
+							className='slider-arrow right'
+							onClick={nextSlide}
+						/>
 					</div>
 				</div>
 			)}
